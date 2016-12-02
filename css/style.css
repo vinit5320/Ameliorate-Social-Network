@@ -1,0 +1,629 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img{ max-width:600px;} 
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+#nav1 {	background-color:#f6bb03;	width:100%;	height:55px;	box-shadow: 0px 1px 50px #5E5E5E;	position:fixed;	top:0px;}
+.title1 {	color:#000000;	font-family:verdana;	font-size:25px;	width:500px;	margin-top:16px;	margin-left:100px;	font-weight:bold;	float:left;}
+.subtitle1 {		color:#000000;	font-family:verdana;	font-size:20px;	width:500px;	margin-top:15px;	margin-right:30px;	font-weight:bold;	float:right;}
+#navigation1{	list-style-type:none;margin-top:18px;	margin-left:30px; font-weight:bold;	}
+li{	display:inline;	padding:20px;}
+#nav1 a{	font-family:verdana;	text-decoration:none;	color:#EDEDED;}
+#nav1 a:hover {	color:#BDBDBD;}
+
+
+body {
+  line-height: 1;
+  background-image: url('background2.jpg');
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.about {
+  margin: 70px auto 40px;
+  padding: 8px;
+  width: 260px;
+  font: 10px/18px 'Lucida Grande', Arial, sans-serif;
+  color: #666;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  background: #eee;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 4px;
+  background-image:  url('background2.jpg');
+}
+.about a {
+  color: #333;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+}
+.about a:hover {
+  text-decoration: none;
+  background: #fafafa;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.about-links {
+  height: 30px;
+}
+.about-links > a {
+  float: left;
+  width: 50%;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.about-author {
+  margin-top: 5px;
+}
+.about-author > a {
+  padding: 1px 3px;
+  margin: 0 -1px;
+}
+
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #51E3FF;
+  background-image:url('background2.jpg');
+
+}
+
+#backgroundTest {
+   background-image:url('background2.jpg');
+}
+
+.container {
+  margin: 80px auto;
+  width: 640px;
+}
+
+.login {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.login:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.login h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #51E3FF;
+  text-align: center;
+  
+  background: #f3f3f3;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: url('background2.jpg');
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.login p {
+  margin: 20px 0 0;
+}
+.login p:first-child {
+  margin-top: 0;
+}
+.login input[type=text], .login input[type=password] {
+  width: 278px;
+}
+.login p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+.login p.remember_me label {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+.login p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.login p.submit {
+  text-align: right;
+}
+
+.login-help {
+  margin: 20px 0;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+}
+.login-help a {
+  color: #cce7fa;
+  text-decoration: none;
+}
+.login-help a:hover {
+  text-decoration: underline;
+}
+
+:-moz-placeholder {
+  color: #c9c9c9 !important;
+  font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+input {
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  margin: 5px;
+  padding: 0 10px;
+  height: 34px;
+  color: #404040;
+  background: white;
+  border: 1px solid;
+  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+  border-radius: 2px;
+  outline: 5px solid #eff4f7;
+  -moz-outline-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #7dc9e2;
+  outline-color: #dceefc;
+  outline-offset: 0;
+}
+
+input[type=submit], input[type=button] {
+  padding: 0 18px;
+  height: 29px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #51E3FF;
+
+  background: #cde5ef;
+  border: 1px solid;
+  
+  border-radius: 16px;
+  outline: 0;
+  
+  box-sizing: content-box;
+  background-image: url('background2.jpg');
+ 
+}
+input[type=submit]:active {
+  background: #cde5ef;
+  border-color: #9eb9c2 #b3c0c8 #b4ccce;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+  line-height: 34px;
+}
+  
+.container1 {
+  margin: 20px auto;
+  width: 800px;
+  
+}
+
+.login1 {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 720px;
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.login1:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.login1 h1 {
+  margin: -20px -20px 1px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0 1px white;
+  text-align:center;
+  background: #f3f3f3;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: url('background2.jpg');
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.login1 h2 {
+
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+  
+}
+.login1 h3 {
+
+  font-size: 12px;
+  color: #555;
+  
+}
+
+.login1 p {
+  margin: 20px 0 0;
+}
+.login1 p:first-child {
+  margin-top: 0;
+}
+.login1 input[type=text], .login input[type=password] {
+  width: 278px;
+}
+.login1 p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+.login1 p.remember_me label {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+.login1 p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.login1 p.submit {
+  text-align: right;
+}
+
+.login1-help {
+  margin: 20px 0;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+}
+.login1-help a {
+  color: #cce7fa;
+  text-decoration: none;
+}
+.login1-help a:hover {
+  text-decoration: underline;
+}
+  
+.container2 {
+  margin: 20px auto;
+  width: 500px;
+}
+
+.login2 {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 450px;
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.login2:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.login2 h1 {
+  margin: -20px -20px 1px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0 1px white;
+  text-align:center;
+  background: #f3f3f3;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: url('background2.jpg');
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.login2 h2 {
+
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+  
+}
+.login2 p {
+  margin: 20px 0 0;
+}
+.login2 p:first-child {
+  margin-top: 0;
+}
+.login2 input[type=text], .login input[type=password] {
+  width: 278px;
+}
+.login2 p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+.login2 p.remember_me label {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+.login2 p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.login2 p.submit {
+  text-align: right;
+}
+
+  
+  #nav
+	{
+
+	}
+
+		#nav > ul > li > ul
+		{
+			display: none;
+		}
+
+		#nav ul
+		{
+			margin: 0;
+		}
+
+		#nav li
+		{
+			border-top: solid 1px rgba(0,0,0,0.25);
+			box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.075);
+			padding: 0.5em 0 0.5em 0;
+		}
+		
+		#nav li:first-child
+		{
+			border: 0;
+			box-shadow: none;
+			padding-top: 0;
+		}
+
+		#nav li:last-child
+		{
+			padding-bottom: 0;
+		}
+
+		#nav li a
+		{
+			display: block;
+			padding: 0.4em 1em 0.4em 1em;
+			text-decoration: none;
+			border-radius: 0.4em;
+			outline: 0;
+			-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			-o-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			-ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+			transition: background-color .25s ease-in-out, color .25s ease-in-out;
+		}
+
+		#nav li.current_page_item a
+		{
+			background-color: #272E39 !important;
+			background-color: rgba(0,0,0,0.15) !important;
+			box-shadow: 0 0 0 1px rgba(255,255,255,0.05), inset 0 0 0.25em 0 rgba(0,0,0,0.25);
+			font-weight: 700;
+			color: #fff;
+		}
+
+		#nav li:hover a
+		{
+			background-color: rgba(200,225,255,0.1);
+			color: #fff;
+		}
+
+   
+.containerpost {
+  margin: 20px auto;
+  width: 800px;
+}
+
+.loginpost {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 720px;
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.loginpost:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.loginpost h1 {
+  margin: -20px -20px 1px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 0 1px white;
+  text-align:center;
+  background: #f3f3f3;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image:  url('background2.jpg');
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+.loginpost h2 {
+
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+  
+}
+.loginpost p {
+  margin: 20px 0 0;
+}
+.loginpost p:first-child {
+  margin-top: 0;
+}
+.loginpost input[type=text], .loginpost input[type=password] {
+  width: 700px;
+  height: 40px;
+
+  }
+.loginpost p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+.loginpost p.remember_me label {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+.loginpost p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.loginpost p.submit {
+  text-align: right;
+}
+
+  ul#list-nav {
+  list-style:none;
+  margin:20px;
+  padding:0;
+  width:900px
+}
+
+ul#list-nav li {
+  display:inline
+}
+
+ul#list-nav li a {
+  text-decoration:none;
+  padding:5px 0;
+  width:220px;
+  background:#485e49;
+  color:#eee;
+  float:left;
+  text-align:center;
+  border-left:1px solid #fff;
+}
+
+ul#list-nav li a:hover {
+  background:#a2b3a1;
+  color:#000
+}
+
+ul#list-nav li.current_page_item a
+		{
+			background-color: #272E39 !important;
+			background-color: rgba(0,0,0,0.15) !important;
+			box-shadow: 0 0 0 1px rgba(255,255,255,0.05), inset 0 0 0.25em 0 rgba(0,0,0,0.25);
+			font-weight: 700;
+			color: #000000;
+		}
+  
+  
+  
+  }
